@@ -31,11 +31,15 @@ class ticTacToeViewController: UIViewController {
         
         for index in clickOnButtons.indices{
             let button = clickOnButtons[index]
+            if button.currentTitle == "✖" || button.currentTitle == "O"{
             UIView.transition(with: button, duration: 0.5, options: [.transitionFlipFromRight] , animations: {
-                button.isEnabled = true
                 button.backgroundColor = .white
+                button.isEnabled = true
                 button.setTitle("", for: .normal)
             })
+            }else{
+                 button.isEnabled = true
+            }
             
         }
           resetGameButton.isEnabled = false
