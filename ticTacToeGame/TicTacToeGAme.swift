@@ -17,12 +17,12 @@ class TicTacToeGame{
             counter = 1
             buttons[index].firstPlayer = false
             buttons[index].secondPlayer = false
-            
+        
         }
     }
     
     func choosenButton(at index:Int){
-        if counter % 2 != 0{
+        if counter % 2 != 0 {
             buttons[index].firstPlayer = true
             counter+=1
         }else{

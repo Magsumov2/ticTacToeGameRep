@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lNk-M0-tMX">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Zwn-KP-Rad">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -11,101 +11,215 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main Menu-->
+        <!--Game Reference View Controller-->
         <scene sceneID="sgb-d7-4O9">
             <objects>
                 <viewController id="Zwn-KP-Rad" customClass="gameReferenceViewController" customModule="ticTacToeGame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gDC-RN-96a">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F5G-oQ-vUY">
-                                <rect key="frame" x="65" y="328" width="245" height="175"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="4TO-Nv-Ntj">
+                                <rect key="frame" x="1" y="85.000000000000028" width="417" height="385.66666666666674"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="nJD-0L-lm1">
+                                        <rect key="frame" x="0.0" y="0.0" width="77" height="385.66666666666669"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ijm-ad-7Mq" customClass="CircleView" customModule="ticTacToeGame" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="77" height="90.333333333333329"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FBZ-8h-zjr" customClass="CircleView" customModule="ticTacToeGame" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="98.333333333333343" width="77" height="90.666666666666657"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VVn-wn-VDG" customClass="CrossView" customModule="ticTacToeGame" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="197" width="77" height="90.333333333333314"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PMD-P7-T7W" customClass="CircleView" customModule="ticTacToeGame" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="295.33333333333331" width="77" height="90.333333333333314"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="l0w-Of-gng">
+                                        <rect key="frame" x="85" y="0.0" width="77" height="385.66666666666669"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fma-e4-ChN" customClass="CrossView" customModule="ticTacToeGame" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="77" height="123.33333333333333"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pKE-uA-lsK" customClass="CircleView" customModule="ticTacToeGame" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="131.33333333333334" width="77" height="123"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D1g-kB-5uM" customClass="CrossView" customModule="ticTacToeGame" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="262.33333333333331" width="77" height="123.33333333333331"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="eq8-qm-zUz">
+                                        <rect key="frame" x="170" y="0.0" width="77" height="385.66666666666669"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KbV-VR-6rC" customClass="CrossView" customModule="ticTacToeGame" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="77" height="90.333333333333329"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H7F-rh-nvw" customClass="CircleView" customModule="ticTacToeGame" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="98.333333333333343" width="77" height="90.666666666666657"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qbo-Qc-H75" customClass="CrossView" customModule="ticTacToeGame" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="197" width="77" height="90.333333333333314"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FZV-Eq-LAu" customClass="CircleView" customModule="ticTacToeGame" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="295.33333333333331" width="77" height="90.333333333333314"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="zur-Sb-FCM">
+                                        <rect key="frame" x="255" y="0.0" width="77" height="385.66666666666669"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n7Z-FD-H8D" customClass="CrossView" customModule="ticTacToeGame" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="77" height="123.33333333333333"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u1s-NX-k2q" customClass="CircleView" customModule="ticTacToeGame" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="131.33333333333334" width="77" height="123"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lBb-jk-wbd" customClass="CrossView" customModule="ticTacToeGame" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="262.33333333333331" width="77" height="123.33333333333331"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="u1s-NX-k2q" firstAttribute="centerY" secondItem="zur-Sb-FCM" secondAttribute="centerY" id="JPk-aC-FF6"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="dZK-5k-D6u">
+                                        <rect key="frame" x="340" y="0.0" width="77" height="385.66666666666669"/>
+                                        <subviews>
+                                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T1v-3I-vQT" customClass="CircleView" customModule="ticTacToeGame" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="77" height="92.666666666666671"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DPL-lr-633" customClass="CircleView" customModule="ticTacToeGame" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="97.666666666666657" width="77" height="92.666666666666657"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9MU-QF-H0l" customClass="CrossView" customModule="ticTacToeGame" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="195.33333333333331" width="77" height="92.666666666666686"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yXE-RZ-Lie" customClass="CircleView" customModule="ticTacToeGame" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="293" width="77" height="92.666666666666686"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="nJD-0L-lm1" firstAttribute="top" secondItem="4TO-Nv-Ntj" secondAttribute="top" id="7U2-bT-f2u"/>
+                                    <constraint firstItem="l0w-Of-gng" firstAttribute="top" secondItem="4TO-Nv-Ntj" secondAttribute="top" id="Oum-FZ-dEE"/>
+                                    <constraint firstItem="nJD-0L-lm1" firstAttribute="top" secondItem="eq8-qm-zUz" secondAttribute="top" id="acW-Uf-gh7"/>
+                                    <constraint firstItem="eq8-qm-zUz" firstAttribute="centerX" secondItem="4TO-Nv-Ntj" secondAttribute="centerX" id="rXe-NB-7Sf"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tic Tac Toe Game" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="199-Xe-4kE">
+                                <rect key="frame" x="59" y="20" width="296" height="95"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="31"/>
-                                <state key="normal" title="New Game"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="28"/>
+                                <color key="textColor" red="0.33025835879999998" green="0.48067608169999998" blue="0.75704339379999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="0.0" height="-2"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ahy-TL-MVy">
+                                <rect key="frame" x="100" y="513.66666666666663" width="214" height="100.33333333333337"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="New Game">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
-                                    <action selector="chooseTitle:" destination="Zwn-KP-Rad" eventType="touchUpInside" id="NBg-LS-Vbj"/>
+                                    <action selector="chooseTitle:" destination="Zwn-KP-Rad" eventType="touchUpInside" id="Gty-95-7pd"/>
+                                    <action selector="newGameButton:" destination="Zwn-KP-Rad" eventType="touchUpInside" id="Wf1-Io-EN0"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="Tic Tac Toe Game" modalPresentationStyle="formSheet" id="IC3-KW-Hzj"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.90386256220000005" blue="0.75819331130000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="tintColor" red="0.1215686277" green="0.1294117719" blue="0.1411764771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="1" green="0.90202581879999999" blue="0.75707149510000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="F5G-oQ-vUY" firstAttribute="top" secondItem="rpa-C7-h66" secondAttribute="top" constant="328" id="2f4-iD-Gdx"/>
-                            <constraint firstItem="rpa-C7-h66" firstAttribute="bottom" secondItem="F5G-oQ-vUY" secondAttribute="bottom" constant="100" id="3nP-na-cnX"/>
-                            <constraint firstItem="F5G-oQ-vUY" firstAttribute="leading" secondItem="rpa-C7-h66" secondAttribute="leading" constant="65" id="hSq-bX-WHA"/>
-                            <constraint firstItem="rpa-C7-h66" firstAttribute="trailing" secondItem="F5G-oQ-vUY" secondAttribute="trailing" constant="65" id="iQO-kk-3IA"/>
+                            <constraint firstItem="4TO-Nv-Ntj" firstAttribute="trailing" secondItem="rpa-C7-h66" secondAttribute="trailing" constant="4" id="6fx-4o-tEs"/>
+                            <constraint firstItem="4TO-Nv-Ntj" firstAttribute="top" secondItem="gDC-RN-96a" secondAttribute="top" constant="85" id="UnF-9e-ya6"/>
+                            <constraint firstItem="199-Xe-4kE" firstAttribute="top" secondItem="rpa-C7-h66" secondAttribute="top" id="ZiW-gR-mGe"/>
+                            <constraint firstItem="Ahy-TL-MVy" firstAttribute="leading" secondItem="rpa-C7-h66" secondAttribute="leading" constant="100" id="dMm-UX-ZPL"/>
+                            <constraint firstItem="rpa-C7-h66" firstAttribute="trailing" secondItem="199-Xe-4kE" secondAttribute="trailing" constant="59" id="jbg-5Z-MTI"/>
+                            <constraint firstItem="Ahy-TL-MVy" firstAttribute="top" secondItem="4TO-Nv-Ntj" secondAttribute="bottom" constant="43" id="lDZ-PA-mz8"/>
+                            <constraint firstItem="rpa-C7-h66" firstAttribute="bottom" secondItem="Ahy-TL-MVy" secondAttribute="bottom" constant="78" id="lON-vf-rbH"/>
+                            <constraint firstItem="rpa-C7-h66" firstAttribute="trailing" secondItem="Ahy-TL-MVy" secondAttribute="trailing" constant="100" id="oyC-7A-9bQ"/>
+                            <constraint firstItem="4TO-Nv-Ntj" firstAttribute="leading" secondItem="rpa-C7-h66" secondAttribute="leading" constant="1" id="ozm-hB-WEr"/>
+                            <constraint firstItem="199-Xe-4kE" firstAttribute="leading" secondItem="rpa-C7-h66" secondAttribute="leading" constant="59" id="p2v-YU-d2a"/>
+                            <constraint firstItem="4TO-Nv-Ntj" firstAttribute="top" secondItem="199-Xe-4kE" secondAttribute="bottom" constant="-30" id="pX8-xY-O0x"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rpa-C7-h66"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Main Menu" id="ITa-oj-3Y4"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="ITa-oj-3Y4"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="newGameButton" destination="F5G-oQ-vUY" id="3pw-Ax-08C"/>
-                        <segue destination="BYZ-38-t0r" kind="showDetail" identifier="choose Title" id="v28-Rp-MHz"/>
+                        <outlet property="mainLabel" destination="199-Xe-4kE" id="5t8-Or-xLk"/>
+                        <outlet property="newGameButton" destination="Ahy-TL-MVy" id="lPe-HK-rOb"/>
+                        <outletCollection property="crossViews" destination="VVn-wn-VDG" collectionClass="NSMutableArray" id="r96-1q-oyY"/>
+                        <outletCollection property="circleViews" destination="FBZ-8h-zjr" collectionClass="NSMutableArray" id="lao-bY-cjb"/>
+                        <outletCollection property="circleViews" destination="Ijm-ad-7Mq" collectionClass="NSMutableArray" id="F5s-xA-LR2"/>
+                        <outletCollection property="circleViews" destination="PMD-P7-T7W" collectionClass="NSMutableArray" id="P1Q-Iv-ngA"/>
+                        <outletCollection property="circleViews" destination="pKE-uA-lsK" collectionClass="NSMutableArray" id="HFO-xy-jbp"/>
+                        <outletCollection property="crossViews" destination="Fma-e4-ChN" collectionClass="NSMutableArray" id="AE7-zF-02q"/>
+                        <outletCollection property="crossViews" destination="D1g-kB-5uM" collectionClass="NSMutableArray" id="vCQ-zT-ica"/>
+                        <outletCollection property="circleViews" destination="H7F-rh-nvw" collectionClass="NSMutableArray" id="9Xs-hx-MIs"/>
+                        <outletCollection property="crossViews" destination="KbV-VR-6rC" collectionClass="NSMutableArray" id="ns5-mD-g6h"/>
+                        <outletCollection property="crossViews" destination="Qbo-Qc-H75" collectionClass="NSMutableArray" id="X7p-ZR-41X"/>
+                        <outletCollection property="circleViews" destination="FZV-Eq-LAu" collectionClass="NSMutableArray" id="dza-cs-s65"/>
+                        <outletCollection property="crossViews" destination="lBb-jk-wbd" collectionClass="NSMutableArray" id="vF3-iV-3Ay"/>
+                        <outletCollection property="circleViews" destination="u1s-NX-k2q" collectionClass="NSMutableArray" id="XET-3Q-Xnc"/>
+                        <outletCollection property="crossViews" destination="n7Z-FD-H8D" collectionClass="NSMutableArray" id="3rk-SE-7xs"/>
+                        <outletCollection property="circleViews" destination="DPL-lr-633" collectionClass="NSMutableArray" id="vqB-Ih-0iY"/>
+                        <outletCollection property="crossViews" destination="9MU-QF-H0l" collectionClass="NSMutableArray" id="MlK-gA-77P"/>
+                        <outletCollection property="circleViews" destination="T1v-3I-vQT" collectionClass="NSMutableArray" id="5ZD-J6-E7l"/>
+                        <outletCollection property="circleViews" destination="yXE-RZ-Lie" collectionClass="NSMutableArray" id="h4p-KF-p4S"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nW9-ht-n0S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1678.125" y="41.197183098591552"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="TFe-AM-PjU">
-            <objects>
-                <navigationController hidesBarsOnSwipe="YES" id="2Rm-ZC-nwP" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="blackTranslucent" translucent="NO" id="qpQ-p2-0n2">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="1" green="0.90202581882476807" blue="0.75707149505615234" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ehF-EE-aIR">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </toolbar>
-                    <connections>
-                        <segue destination="Zwn-KP-Rad" kind="relationship" relationship="rootViewController" id="BoD-kw-ted"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="t46-wz-0zN" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="748" y="42"/>
-        </scene>
-        <!--Split View Controller-->
-        <scene sceneID="urr-Ks-a83">
-            <objects>
-                <splitViewController id="lNk-M0-tMX" sceneMemberID="viewController">
-                    <connections>
-                        <segue destination="2Rm-ZC-nwP" kind="relationship" relationship="masterViewController" id="8DK-3b-rW8"/>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="detailViewController" id="Ovo-ug-0gX"/>
-                    </connections>
-                </splitViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3kA-2y-6Hz" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-28" y="363"/>
+            <point key="canvasLocation" x="2258" y="-157"/>
         </scene>
         <!--Tic Tac Toe View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ticTacToeViewController" customModule="ticTacToeGame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="iFc-0D-GKG" userLabel="Stack View2">
-                                <rect key="frame" x="28" y="64" width="319" height="82"/>
+                                <rect key="frame" x="40" y="80" width="334" height="120"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="✖" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bL6-un-CSD">
-                                        <rect key="frame" x="0.0" y="0.0" width="139.5" height="82"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="147" height="120"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="50"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SDY-P8-pqs">
-                                        <rect key="frame" x="179.5" y="0.0" width="139.5" height="82"/>
+                                        <rect key="frame" x="187" y="0.0" width="147" height="120"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -114,7 +228,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lHS-MY-gDp">
-                                <rect key="frame" x="78" y="604" width="219" height="43"/>
+                                <rect key="frame" x="78" y="673" width="258" height="43"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                 <state key="normal" title="Reset Game">
@@ -124,22 +238,21 @@
                                     <action selector="gameResetAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qFg-rX-5wH"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ничья!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="as0-Pp-JqG">
-                                <rect key="frame" x="78" y="166" width="219" height="41"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It's a draw!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="as0-Pp-JqG">
+                                <rect key="frame" x="78" y="224" width="258" height="36"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
-                                <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="siX-Jh-hcw">
-                                <rect key="frame" x="20" y="244" width="335" height="341"/>
+                                <rect key="frame" x="20" y="270" width="374" height="384"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="m7B-1b-z2d">
-                                        <rect key="frame" x="0.0" y="0.0" width="335" height="108.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="122.66666666666667"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="93N-t2-hzs">
-                                                <rect key="frame" x="0.0" y="0.0" width="106.5" height="108.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="119.33333333333333" height="122.66666666666667"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
                                                 <connections>
@@ -147,7 +260,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wwI-MH-occ">
-                                                <rect key="frame" x="114.5" y="0.0" width="106" height="108.5"/>
+                                                <rect key="frame" x="127.33333333333334" y="0.0" width="119.33333333333334" height="122.66666666666667"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
                                                 <connections>
@@ -155,7 +268,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u4T-g1-iMB">
-                                                <rect key="frame" x="228.5" y="0.0" width="106.5" height="108.5"/>
+                                                <rect key="frame" x="254.66666666666671" y="0.0" width="119.33333333333334" height="122.66666666666667"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
                                                 <connections>
@@ -165,10 +278,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="SgU-qS-8Aj">
-                                        <rect key="frame" x="0.0" y="116.5" width="335" height="108"/>
+                                        <rect key="frame" x="0.0" y="130.66666666666669" width="374" height="122.66666666666669"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M4c-Ko-nXm">
-                                                <rect key="frame" x="0.0" y="0.0" width="106.5" height="108"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="119.33333333333333" height="122.66666666666667"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
                                                 <connections>
@@ -176,7 +289,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HoB-Ym-0ca">
-                                                <rect key="frame" x="114.5" y="0.0" width="106" height="108"/>
+                                                <rect key="frame" x="127.33333333333334" y="0.0" width="119.33333333333334" height="122.66666666666667"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
                                                 <connections>
@@ -184,7 +297,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bpj-6t-kH6">
-                                                <rect key="frame" x="228.5" y="0.0" width="106.5" height="108"/>
+                                                <rect key="frame" x="254.66666666666671" y="0.0" width="119.33333333333334" height="122.66666666666667"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
                                                 <connections>
@@ -194,10 +307,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="SAa-Po-3DI">
-                                        <rect key="frame" x="0.0" y="232.5" width="335" height="108.5"/>
+                                        <rect key="frame" x="0.0" y="261.33333333333337" width="374" height="122.66666666666669"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V1L-CP-sra">
-                                                <rect key="frame" x="0.0" y="0.0" width="106.5" height="108.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="119.33333333333333" height="122.66666666666667"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
                                                 <connections>
@@ -205,7 +318,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WWB-Dv-yQS">
-                                                <rect key="frame" x="114.5" y="0.0" width="106" height="108.5"/>
+                                                <rect key="frame" x="127.33333333333334" y="0.0" width="119.33333333333334" height="122.66666666666667"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
                                                 <connections>
@@ -213,7 +326,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rjX-wl-stx">
-                                                <rect key="frame" x="228.5" y="0.0" width="106.5" height="108.5"/>
+                                                <rect key="frame" x="254.66666666666671" y="0.0" width="119.33333333333334" height="122.66666666666667"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
                                                 <state key="normal">
@@ -232,20 +345,19 @@
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lHS-MY-gDp" secondAttribute="trailing" constant="78" id="1LQ-WM-Pp2"/>
                             <constraint firstItem="lHS-MY-gDp" firstAttribute="top" secondItem="siX-Jh-hcw" secondAttribute="bottom" constant="19" id="1vE-bh-g21"/>
-                            <constraint firstItem="iFc-0D-GKG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="7ea-my-Pea"/>
-                            <constraint firstItem="siX-Jh-hcw" firstAttribute="top" secondItem="as0-Pp-JqG" secondAttribute="bottom" constant="37" id="8bc-C4-Yg8"/>
+                            <constraint firstItem="iFc-0D-GKG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="7ea-my-Pea"/>
+                            <constraint firstItem="siX-Jh-hcw" firstAttribute="top" secondItem="as0-Pp-JqG" secondAttribute="bottom" constant="10" id="8bc-C4-Yg8"/>
                             <constraint firstItem="lHS-MY-gDp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="78" id="AZn-rb-ng6"/>
-                            <constraint firstItem="siX-Jh-hcw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="180" id="BNF-Ex-60a"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iFc-0D-GKG" secondAttribute="trailing" constant="28" id="It9-QX-Nfb"/>
-                            <constraint firstItem="siX-Jh-hcw" firstAttribute="top" secondItem="iFc-0D-GKG" secondAttribute="bottom" constant="98" id="SaL-6h-eg7"/>
-                            <constraint firstItem="iFc-0D-GKG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="28" id="VDQ-3o-Eaw"/>
+                            <constraint firstItem="siX-Jh-hcw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="250" id="BNF-Ex-60a"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iFc-0D-GKG" secondAttribute="trailing" constant="40" id="It9-QX-Nfb"/>
+                            <constraint firstItem="siX-Jh-hcw" firstAttribute="top" secondItem="iFc-0D-GKG" secondAttribute="bottom" constant="70" id="SaL-6h-eg7"/>
+                            <constraint firstItem="iFc-0D-GKG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="VDQ-3o-Eaw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="as0-Pp-JqG" secondAttribute="trailing" constant="78" id="ck2-et-BWu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SAa-Po-3DI" secondAttribute="bottom" constant="82" id="eNM-L8-m19"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="siX-Jh-hcw" secondAttribute="trailing" constant="20" id="foc-6f-X7o"/>
                             <constraint firstItem="as0-Pp-JqG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="78" id="in5-JS-Yqn"/>
                             <constraint firstItem="siX-Jh-hcw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="oud-2n-UCC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lHS-MY-gDp" secondAttribute="bottom" constant="20" id="tLB-8F-S3Y"/>
-                            <constraint firstItem="as0-Pp-JqG" firstAttribute="top" secondItem="iFc-0D-GKG" secondAttribute="bottom" constant="20" id="yhY-O8-F1N"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -267,10 +379,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="709" y="802"/>
+            <point key="canvasLocation" x="2951" y="-157"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="Ovo-ug-0gX"/>
-    </inferredMetricsTieBreakers>
 </document>
